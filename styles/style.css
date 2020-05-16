@@ -1,0 +1,404 @@
+@import url('https://fonts.googleapis.com/css?family=Rakkas|Yatra+One&display=swap');
+/*
+font-family: 'Yatra One', cursive;
+font-family: 'Rakkas', cursive;
+*/
+
+:root{
+    --font1: 'Yatra One', cursive;
+    --font2: 'Rakkas', cursive;
+    --gradient: linear-gradient(to bottom,#dd2476,#ff512f);
+    --light-gray: rgba(255, 255, 255, 0.582);
+    --not-black-but-dark:#1c1b20;
+}
+
+
+/* Sticky nav bar */
+.sticky{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.555);
+    z-index: 999;
+    transition: all 1.5s ease;
+}
+
+
+
+/* Main CSS */
+*{
+    font-family: var(--font1);
+}
+
+header,section{
+    overflow-x: hidden;
+}
+
+header .container-fluid{
+    margin: 0;
+    padding: 0;
+}
+
+.header-image img{
+    max-width: 100%;
+}
+
+header a{
+    font-family: var(--font1);
+    color: whitesmoke;
+}
+
+header{
+    background: var(--gradient);
+    min-height: 100vh;
+}
+
+header .navbar-brand:hover{
+    color: black !important;
+}
+
+header .navbar-brand i{
+    transform: scale(1.5,1.5);
+    margin-right: 2vmin;
+    margin-left: 2vmin;
+}
+
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover{
+    background: #ddd;
+}
+
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+
+.dropdown:hover{
+    cursor: pointer;
+}
+
+.dropdown{
+    color: white;
+}
+
+.nav-item a:hover{
+    color: black;
+}
+
+.nav-item{
+    margin: 5px 10px;
+}
+
+.nav-item a{
+    font-size: 19px;
+}
+
+.navbar-toggler{
+    color: white;
+}
+
+
+
+/*Landing page content*/
+.landing-page .row .col-md-7{
+    margin-top: 50vh;
+    transform: translateY(-60%);
+    color: white;
+    font-family: var(--font1);
+}
+
+.landing-page .row .col-md-7 h6{
+    letter-spacing: 10px;
+    margin-bottom: 20px;
+}
+
+.landing-page .row .col-md-7 h1{
+    font-size: 50px;
+    font-weight: 700;
+    display: inline;
+}
+
+.typed-cursor{
+    font-size: 50px;
+    font-weight: 100;
+    font-family: sans-serif !important;
+}
+
+.landing-page .row .col-md-7 p{
+    margin: 40px 0px 70px 0px;
+}
+
+.landing-page .row .col-md-7 button{
+    border-radius: 40px;
+    background-color: rgba(255, 255, 255, 0.329);
+    color: white;
+    border: none;
+    font-weight: 500;
+    font-size: 20px;
+    transition-duration: 400ms !important;
+}
+
+.landing-page .row .col-md-7 button:hover{
+    transform: scale(1.1,1.1);
+}
+
+
+
+
+/* Section-1 */
+
+.section-1{
+    padding: 20vmin 0;
+    background-color: white;
+}
+
+.section-1 .row .col-md-6 .pray img{
+    opacity: 0.8;
+    width: 80%;
+    background-origin: 0.2em;
+}
+
+.section-1 .row .col-md-6:last-child{
+    position: relative;
+}
+
+.section-1 .row .col-md-6 .panel{
+    position: absolute;
+    top: 7vmin;
+    left: -18vmin;
+    background: white;
+    border-radius: 3px;
+    text-align: left;
+    padding: 13vmin 5vmin 20vmin 10vmin;
+    box-shadow: 0px 25px 42px rgba(0, 0, 0, 0.2);
+    font-family: var(--font1);
+    z-index: 1;
+}
+
+.section-1 .row .col-md-6 .panel h1{
+    font-weight: bold;
+    padding: 0.4em 0;
+    font-size: 2em;
+}
+
+.section-1 .row .col-md-6 .panel p{
+    font-size: 0.9em;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+/* Section-2 */
+
+.section-2{
+    background-color: white;
+    padding-bottom: 15vmin;
+}
+
+section-2 .container-fluid{
+    margin: 0;
+    padding: 0;
+}
+
+.cover {
+    width: 100%;
+    height: 55vmin;
+    background: url("/images/pexels-photo-452738.jpeg");
+    background-position: -24rem -19rem;
+    background-size: 150%;
+    position: relative;
+}
+
+.cover .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+}
+
+.cover .content {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    padding-top: 19vmin;
+}
+
+.cover .content > h1 {
+    font-family: var(--Patua);
+    font-size: 6vmin;
+    color: whitesmoke;
+}
+
+.cover .content > p {
+    font-family: var(--Rubik);
+    font-size: 2vmin;
+    color: #e5e5e5;
+}
+
+.numbers .rect {
+    position: relative;
+    z-index: 1;
+    background: white;
+    width: 17rem;
+    height: 12rem;
+    padding-top: 3.5vmin;
+    margin: 1rem;
+    border-radius: 0.5em;
+    box-shadow: 1px 2px 50px 0px rgba(255, 0, 0, 0.349);
+}
+
+.numbers {
+    margin-top: -15vmin;
+}
+
+.numbers .rect h1 {
+    font-size: 5rem;
+    color: tomato;
+}
+
+.numbers .rect > p {
+    font-family: var(--Patua);
+}
+
+.purchase > h1 {
+    padding-top: 15vmin;
+    padding-bottom: 0.1em;
+    font-family: var(--Lobster);
+}
+
+.purchase > p {
+    color: var(--light-black);
+    font-size: 3vmin;
+    padding-bottom: 10vmin;
+}
+
+.purchase .cards .card {
+    width: 22rem;
+    margin: 3vmin 3vmin;
+}
+
+.cards div {
+    padding: 0;
+    margin: 0;
+}
+
+.cards .title {
+    background: rgba(208, 241, 241, 0.199);
+    padding: 1.4em 2.5em;
+    font-size: 2vmin;
+}
+
+.card .card-text {
+    padding: 2.5rem 3rem;
+    color: var(--light-black);
+}
+
+.card-body .pricing {
+    background: rgba(208, 241, 241, 0.199);
+    border-top-right-radius: 170px;
+    border-top-left-radius: 170px;
+}
+
+.card-body .pricing > h1 {
+    font-size: 10vmin;
+    padding: 1em 0.5em;
+}
+
+
+/* Section-3 */
+
+.section-3{
+    height: 70vmin;
+    background: var(--gradient);
+}
+
+.section-3 .col-md-12>h1{
+    padding: 2em 0 .5em 0;
+    color: whitesmoke;
+    font-size: 6vmin;
+}
+
+.section-3 .col-md-12>p{
+    padding: 0 4em;
+    padding-bottom: 2em;
+    color: var(--light-gray);
+    font-size: 3vmin;
+}
+
+.section-3 .desktop{
+    background-color: white;
+    display: inline-block;
+    border-radius: 3em;
+    padding: 2vmin 4.5vmin;
+    margin: 1em;
+}
+
+.section-3 .desktop h3{
+    font-size: 4vmin;
+}
+
+.section-3.desktop p{
+    font-size: 2vmin;
+}
+
+.section-3 .mobile{
+    background-color: white;
+    display: inline-block;
+    border-radius: 3em;
+    padding: 2vmin 4.5vmin;
+    margin: 1em;
+}
+
+.section-3 .mobile h3{
+    font-size: 4vmin;
+}
+
+.section-3.mobile p{
+    font-size: 2vmin;
+}
+
+
+/* Footer */
+
+
+.footer-space{
+    position: relative;
+    width: 100%;
+    padding: 14vmin 18vmin;
+    z-index: -3;
+    background-color: red;
+}
+
+footer{
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(34, 29, 29);
+    z-index: -2;
+    padding: 14vmin 18vmin;
+}
+
+footer input{
+    border: none !important;
+}
+
+footer .input-group .input-group-text{
+    background: var(--gradient);
+    border: none !important;
+}
